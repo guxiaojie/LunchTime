@@ -1,0 +1,24 @@
+
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+//add Masonry
+#define MAS_SHORTHAND
+#define MAS_SHORTHAND_GLOBALS
+
+#import <DDLog.h>
+#import <CocoaLumberjack.h>
+#import "Macros.h"
+#import <AFNetworking/AFNetworking.h>
+#import <ReactiveCocoa/ReactiveCocoa.h>
+#import <Masonry/Masonry.h>
+#import <JSONModel/JSONModel.h>
+#import "UIImageView+WebCache.h"
+#import "MJRefresh.h"
+#import <RealReachability.h>
+#import "AppDelegate.h"
+
+#endif /* PrefixHeader_pch */
+
+
+
