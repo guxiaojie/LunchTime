@@ -9,10 +9,15 @@ LunchTime(App Name) displays photos with headings and descriptions..
 
 - `HomeViewController`:  Use TableView(CollectionView is also great),
 
+View
 - `HomeTableViewCell`:  Cell with Photos/headings/descriptions
 
+ViewModel
 - `HomeViewModel`: Request Data from  service; parse with JSON
 
+- `HomeCellViewModel`:  HomeCellViewModel
+
+Model
 - `CanadaModel`: A model according to REST service
 
 - `PhotoModel`: Another model according to REST service
@@ -22,10 +27,10 @@ LunchTime(App Name) displays photos with headings and descriptions..
 
 
 ## Request
-Use URLSessionDataTask instead of  NSURLConnection
+Use AFNetworking instead of  NSURLConnection
 
 ```objective-c
-
+- (RACSignal *)netWorkRacSignal
 ```
 
 ## Pod
@@ -45,6 +50,7 @@ target 'LunchTime' do
 target 'LunchTimeTests' do
 inherit! :search_paths
 pod 'Kiwi', '~> 2.3.1'
+pod 'OCMock'
 end
 end
 
@@ -52,7 +58,8 @@ end
 
 ## Unit Tests
 includes a suite of unit tests within the Tests subdirectory. These tests can be run simply be executed the test action on the platform framework you would like to test.
-- `LunchTimeTests`
+
+- `HomeViewModelTest.m`
 
 
 
