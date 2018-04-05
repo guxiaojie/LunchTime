@@ -60,7 +60,6 @@
 		C6B7ABE22075D6C0009386AA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6B7ABE12075D6C0009386AA /* LaunchScreen.storyboard */; };
 		C6BB9F2720749B6C0044FF17 /* CanadaModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C6BB9F2620749B6C0044FF17 /* CanadaModel.m */; };
 		C6BB9F2B20749C970044FF17 /* PhotoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C6BB9F2A20749C970044FF17 /* PhotoModel.m */; };
-		C6BB9F2E20749CA00044FF17 /* CanadaViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C6BB9F2D20749CA00044FF17 /* CanadaViewModel.m */; };
 		C6EBC1B62075F04C006ED713 /* HomeViewModelTest.m in Sources */ = {isa = PBXBuildFile; fileRef = C6EBC1B42075F04C006ED713 /* HomeViewModelTest.m */; };
 		C6EBC1B72075F04C006ED713 /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = C6EBC1B52075F04C006ED713 /* data.json */; };
 /* End PBXBuildFile section */
@@ -186,8 +185,6 @@
 		C6BB9F2620749B6C0044FF17 /* CanadaModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CanadaModel.m; sourceTree = "<group>"; };
 		C6BB9F2920749C970044FF17 /* PhotoModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PhotoModel.h; sourceTree = "<group>"; };
 		C6BB9F2A20749C970044FF17 /* PhotoModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhotoModel.m; sourceTree = "<group>"; };
-		C6BB9F2C20749CA00044FF17 /* CanadaViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CanadaViewModel.h; sourceTree = "<group>"; };
-		C6BB9F2D20749CA00044FF17 /* CanadaViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CanadaViewModel.m; sourceTree = "<group>"; };
 		C6EBC1B42075F04C006ED713 /* HomeViewModelTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewModelTest.m; sourceTree = "<group>"; };
 		C6EBC1B52075F04C006ED713 /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
 		E334594E636C630CB75EB0A0 /* Pods-LunchTimeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LunchTimeTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LunchTimeTests/Pods-LunchTimeTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -497,8 +494,6 @@
 				C6314AFD20750BA5004DB62F /* HomeViewModel.m */,
 				C6314B03207573A7004DB62F /* HomeCellViewModel.h */,
 				C6314B04207573A7004DB62F /* HomeCellViewModel.m */,
-				C6BB9F2C20749CA00044FF17 /* CanadaViewModel.h */,
-				C6BB9F2D20749CA00044FF17 /* CanadaViewModel.m */,
 				C6314ABD2074FA73004DB62F /* BaseViewModel.h */,
 				C6314ABE2074FA73004DB62F /* BaseViewModel.m */,
 			);
@@ -723,7 +718,6 @@
 				C6314AE9207508C4004DB62F /* RACSubscriber+AFProgressCallbacks.m in Sources */,
 				C6314AEB207508C4004DB62F /* AFHTTPSessionManager+RACSupport.m in Sources */,
 				C6314B502075C3AD004DB62F /* TestHomeViewModel.m in Sources */,
-				C6BB9F2E20749CA00044FF17 /* CanadaViewModel.m in Sources */,
 				C6314B4420757481004DB62F /* MJRefreshAutoFooter.m in Sources */,
 				C6314B3720757481004DB62F /* UIView+MJExtension.m in Sources */,
 				C6314AE8207508C4004DB62F /* AFURLConnectionOperation+RACSupport.m in Sources */,
