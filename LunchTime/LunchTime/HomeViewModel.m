@@ -63,8 +63,13 @@
         @strongify(self);
         DDLogError(@"%@",response);
         CanadaModel *homeModel = [[CanadaModel alloc] initWithDictionary:response error:nil];
-        self.items = homeModel.rows;
+        NSMutableArray *tmp = @[].mutableCopy;
+        for (PhotoModel *model in homeModel.rows) {
+            HomeCellViewModel *cellViewModel = [[HomeCellViewModel alloc] initWithModel:model];
+            [tmp addObject:cellViewModel];
+        }
         self.title = homeModel.title;
+        self.items = tmp.copy;
     }];
     
     [[RACSignal merge:@[_fetchProductCommand.errors]] subscribe:self.errors];
@@ -75,7 +80,7 @@
     if (index >= self.items.count) {
         return nil;
     } else {
-        return [[HomeCellViewModel alloc] initWithModel:[_items objectAtIndex:index]];
+        return self.items[index];
     }
 }
 

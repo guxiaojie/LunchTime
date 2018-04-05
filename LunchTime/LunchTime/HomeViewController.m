@@ -79,7 +79,7 @@
     
     [self.myHomeViewModel.errors subscribeNext:^(NSError *error) {
         DDLogError(@"something error:%@", error);
-        //TODO: 这里可以选择一种合适的方式将错误信息展示出来
+        //TODO: Toast to show error
     }];
 }
 
@@ -95,7 +95,7 @@
         @strongify(self);
         self.title = self.myHomeViewModel.title;
     }];
-    //没有更多数据时，隐藏table的footer
+    //no more data, hid table footer
 //    RAC(self.myTableView.mj_footer, hidden) = [self.myHomeViewModel.hasMoreData not];
 }
 
