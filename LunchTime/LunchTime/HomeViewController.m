@@ -60,7 +60,7 @@
     [self loadData];
 }
 
-//初始化
+//init
 - (void)initViewModel {
     
     if (!self.myHomeViewModel) {
@@ -83,7 +83,7 @@
     }];
 }
 
-//绑定
+//bind
 - (void)bindViewModel {
     @weakify(self);
     [RACObserve(self.myHomeViewModel, items) subscribeNext:^(id x) {
@@ -99,7 +99,7 @@
 //    RAC(self.myTableView.mj_footer, hidden) = [self.myHomeViewModel.hasMoreData not];
 }
 
-//加载数据
+//load data
 -(void)loadData
 {
     [self.myHomeViewModel.fetchProductCommand execute:nil];
@@ -111,12 +111,11 @@
     // Dispose of any resources that can be recreated.
 }
 
-#pragma mark -
+#pragma mark - TableView
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     return UITableViewAutomaticDimension;
 }
-
 
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
@@ -137,6 +136,5 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     [tableView deselectRowAtIndexPath:indexPath animated:NO];
 }
-
 
 @end

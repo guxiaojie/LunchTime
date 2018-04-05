@@ -22,15 +22,12 @@
     return self;
 }
 
--(RACSignal *)netWorkRacSignal
-{
+- (RACSignal *)netWorkRacSignal {
     NSString *URL = @"https://dl.dropboxusercontent.com/s/2iodh4vg0eortkl/facts.json";
-    
     AFHTTPRequestOperationManager *manager = [[AFHTTPRequestOperationManager alloc]
                                               initWithBaseURL:[NSURL URLWithString:URL]];
     manager.requestSerializer = [AFJSONRequestSerializer serializer];
     manager.responseSerializer = [AFJSONResponseSerializer serializer];
-    
     manager.responseSerializer.acceptableContentTypes = [NSSet setWithObject:@"text/plain"];
     
     return [[[manager rac_GET:@"" parameters:nil]
@@ -46,7 +43,7 @@
             }];
 }
 
--(void)initCommand
+- (void)initCommand
 {
     _fetchProductCommand = [[RACCommand alloc]initWithSignalBlock:^RACSignal *(id input) {
         return [[self netWorkRacSignal]
@@ -59,7 +56,7 @@
 //    }];
 }
 
--(void)initSubscribe
+- (void)initSubscribe
 {
     @weakify(self);
     [[_fetchProductCommand.executionSignals switchToLatest] subscribeNext:^(id response) {

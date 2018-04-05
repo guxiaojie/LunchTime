@@ -51,6 +51,8 @@
 		C6314B4420757481004DB62F /* MJRefreshAutoFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = C6314B2E20757481004DB62F /* MJRefreshAutoFooter.m */; };
 		C6314B4520757481004DB62F /* MJRefreshComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = C6314B3020757481004DB62F /* MJRefreshComponent.m */; };
 		C6314B4A2075799F004DB62F /* HomeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C6314B492075799F004DB62F /* HomeModel.m */; };
+		C6314B4C2075BC09004DB62F /* MockDataHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = C6314B4B2075BC09004DB62F /* MockDataHelper.m */; };
+		C6314B502075C3AD004DB62F /* TestHomeViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C6314B4F2075C3AD004DB62F /* TestHomeViewModel.m */; };
 		C6725D7F20747A0700161B6D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C6725D7E20747A0700161B6D /* AppDelegate.m */; };
 		C6725D8220747A0700161B6D /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6725D8120747A0700161B6D /* HomeViewController.m */; };
 		C6725D8720747A0700161B6D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6725D8620747A0700161B6D /* Assets.xcassets */; };
@@ -164,6 +166,9 @@
 		C6314B47207574E1004DB62F /* Macros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Macros.h; sourceTree = "<group>"; };
 		C6314B482075799F004DB62F /* HomeModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeModel.h; sourceTree = "<group>"; };
 		C6314B492075799F004DB62F /* HomeModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeModel.m; sourceTree = "<group>"; };
+		C6314B4B2075BC09004DB62F /* MockDataHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MockDataHelper.m; sourceTree = "<group>"; };
+		C6314B4E2075C3AD004DB62F /* TestHomeViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestHomeViewModel.h; sourceTree = "<group>"; };
+		C6314B4F2075C3AD004DB62F /* TestHomeViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestHomeViewModel.m; sourceTree = "<group>"; };
 		C6725D7A20747A0700161B6D /* LunchTime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LunchTime.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6725D7D20747A0700161B6D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C6725D7E20747A0700161B6D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -419,6 +424,16 @@
 			path = Network;
 			sourceTree = "<group>";
 		};
+		C6314B4D2075C387004DB62F /* RACUnitTest */ = {
+			isa = PBXGroup;
+			children = (
+				C6314B4E2075C3AD004DB62F /* TestHomeViewModel.h */,
+				C6314B4F2075C3AD004DB62F /* TestHomeViewModel.m */,
+			);
+			name = RACUnitTest;
+			path = Network;
+			sourceTree = "<group>";
+		};
 		C6725D7120747A0700161B6D = {
 			isa = PBXGroup;
 			children = (
@@ -449,6 +464,7 @@
 				C6314AFF20757358004DB62F /* View */,
 				C6314ABC2074FA1C004DB62F /* Model */,
 				C6BB9F2820749C5B0044FF17 /* ViewModel */,
+				C6314B4D2075C387004DB62F /* RACUnitTest */,
 				C6314B462075748A004DB62F /* Vender */,
 				C6725D8620747A0700161B6D /* Assets.xcassets */,
 				C6725D8B20747A0700161B6D /* Info.plist */,
@@ -462,6 +478,7 @@
 			isa = PBXGroup;
 			children = (
 				C6725D9620747A0700161B6D /* LunchTimeTests.m */,
+				C6314B4B2075BC09004DB62F /* MockDataHelper.m */,
 				C6725D9820747A0700161B6D /* Info.plist */,
 			);
 			path = LunchTimeTests;
@@ -697,6 +714,7 @@
 				C6314B3320757481004DB62F /* UIScrollView+MJRefresh.m in Sources */,
 				C6314AE9207508C4004DB62F /* RACSubscriber+AFProgressCallbacks.m in Sources */,
 				C6314AEB207508C4004DB62F /* AFHTTPSessionManager+RACSupport.m in Sources */,
+				C6314B502075C3AD004DB62F /* TestHomeViewModel.m in Sources */,
 				C6BB9F2E20749CA00044FF17 /* CanadaViewModel.m in Sources */,
 				C6314B4420757481004DB62F /* MJRefreshAutoFooter.m in Sources */,
 				C6314B3720757481004DB62F /* UIView+MJExtension.m in Sources */,
@@ -742,6 +760,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C6725D9720747A0700161B6D /* LunchTimeTests.m in Sources */,
+				C6314B4C2075BC09004DB62F /* MockDataHelper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
