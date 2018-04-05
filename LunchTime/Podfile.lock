@@ -31,6 +31,7 @@ PODS:
   - JSONModel (1.0.2)
   - Kiwi (2.3.1)
   - Masonry (0.6.4)
+  - OCMock (3.4.1)
   - ReactiveCocoa (2.5):
     - ReactiveCocoa/UI (= 2.5)
   - ReactiveCocoa/Core (2.5):
@@ -53,6 +54,7 @@ DEPENDENCIES:
   - JSONModel (~> 1.0.1)
   - Kiwi (~> 2.3.1)
   - Masonry (~> 0.6.1)
+  - OCMock
   - ReactiveCocoa (= 2.5)
   - RealReachability
   - SDWebImage (~> 3.7)
@@ -63,10 +65,11 @@ SPEC CHECKSUMS:
   JSONModel: 6ffcb4ffa3659c9e9a2e5d45d6c7705bab187c03
   Kiwi: f038a6c61f7a9e4d7766bff5717aa3b3fdb75f55
   Masonry: 281802d04d787ea2973179ee8bcb50500579ede2
+  OCMock: 2cd0716969bab32a2283ff3a46fd26a8c8b4c5e3
   ReactiveCocoa: e2db045570aa97c695e7aa97c2bcab222ae51f4a
   RealReachability: a8c483900986a0f3305733961effbfbb00637a02
   SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
 
-PODFILE CHECKSUM: 9f299a9dbe474f851a253de233dd327ceaebbe8c
+PODFILE CHECKSUM: e0a6e849ee363b1f9655e0044230f957ae3fc7dc
 
 COCOAPODS: 1.4.0

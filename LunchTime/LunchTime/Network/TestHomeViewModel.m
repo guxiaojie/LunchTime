@@ -27,9 +27,9 @@
         return [[manager rac_GET:@"" parameters:nil] subscribeNext:^(RACTuple *x) {
             
             //return data
-            NSLog(@"data:%@", x.first);
-            
+            //NSLog(@"data:%@", x.first);
             [subscriber sendNext:x];
+            
         } error:^(NSError *error) {
         } completed:^{
             [subscriber sendCompleted];

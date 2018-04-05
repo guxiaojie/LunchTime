@@ -15,7 +15,7 @@
     if (self) {
         _errors = [RACSubject subject];
         
-        _cancelCommand = [[RACCommand alloc]initWithSignalBlock:^RACSignal *(id input) {
+        _cancelCommand = [[RACCommand alloc] initWithSignalBlock:^RACSignal *(id input) {
             return [RACSignal empty];
         }];
     }

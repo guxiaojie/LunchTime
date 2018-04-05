@@ -12,7 +12,6 @@
 @property(strong,nonatomic) UIImageView *leftColorView;
 @property(strong,nonatomic) UILabel *nameLabel;
 @property(strong,nonatomic) UILabel *descriptionLabel;
-@property(strong,nonatomic) UIButton *goButton;
 @end
 
 //image size
@@ -47,7 +46,7 @@ static const CGFloat textFontSize = 14;
             self.nameLabel.font = CHINESE_SYSTEM(textFontSize);
             self.nameLabel.textColor = [UIColor grayColor];
             self.nameLabel.textAlignment = NSTextAlignmentLeft;
-            self.nameLabel.numberOfLines = 0;
+            self.nameLabel.numberOfLines = 1;
             [self.nameLabel sizeToFit];
             [self.contentView addSubview:self.nameLabel];
             [self.nameLabel mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -86,13 +85,6 @@ static const CGFloat textFontSize = 14;
             }
             return nil;
         }];
-        
-        [[[self.goButton
-           rac_signalForControlEvents:UIControlEventTouchUpInside]
-          takeUntil:self.rac_prepareForReuseSignal]
-         subscribeNext:^(id x) {
-             NSLog(@"cell 跳转");
-         }];
         
         [self updateConstraintsIfNeeded];
     }

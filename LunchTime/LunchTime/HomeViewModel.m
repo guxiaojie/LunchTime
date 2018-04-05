@@ -72,7 +72,11 @@
 
 //sub ViewModel
 - (HomeCellViewModel *)itemViewModelForIndex:(NSInteger)index {
-    return [[HomeCellViewModel alloc] initWithModel:[_items objectAtIndex:index]];
+    if (index >= self.items.count) {
+        return nil;
+    } else {
+        return [[HomeCellViewModel alloc] initWithModel:[_items objectAtIndex:index]];
+    }
 }
 
 @end

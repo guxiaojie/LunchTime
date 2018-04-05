@@ -51,16 +51,18 @@
 		C6314B4420757481004DB62F /* MJRefreshAutoFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = C6314B2E20757481004DB62F /* MJRefreshAutoFooter.m */; };
 		C6314B4520757481004DB62F /* MJRefreshComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = C6314B3020757481004DB62F /* MJRefreshComponent.m */; };
 		C6314B4A2075799F004DB62F /* HomeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C6314B492075799F004DB62F /* HomeModel.m */; };
-		C6314B4C2075BC09004DB62F /* MockDataHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = C6314B4B2075BC09004DB62F /* MockDataHelper.m */; };
 		C6314B502075C3AD004DB62F /* TestHomeViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C6314B4F2075C3AD004DB62F /* TestHomeViewModel.m */; };
 		C6725D7F20747A0700161B6D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C6725D7E20747A0700161B6D /* AppDelegate.m */; };
 		C6725D8220747A0700161B6D /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6725D8120747A0700161B6D /* HomeViewController.m */; };
 		C6725D8720747A0700161B6D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6725D8620747A0700161B6D /* Assets.xcassets */; };
 		C6725D8D20747A0700161B6D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C6725D8C20747A0700161B6D /* main.m */; };
 		C6725D9720747A0700161B6D /* LunchTimeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C6725D9620747A0700161B6D /* LunchTimeTests.m */; };
+		C6B7ABE22075D6C0009386AA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6B7ABE12075D6C0009386AA /* LaunchScreen.storyboard */; };
 		C6BB9F2720749B6C0044FF17 /* CanadaModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C6BB9F2620749B6C0044FF17 /* CanadaModel.m */; };
 		C6BB9F2B20749C970044FF17 /* PhotoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C6BB9F2A20749C970044FF17 /* PhotoModel.m */; };
 		C6BB9F2E20749CA00044FF17 /* CanadaViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C6BB9F2D20749CA00044FF17 /* CanadaViewModel.m */; };
+		C6EBC1B62075F04C006ED713 /* HomeViewModelTest.m in Sources */ = {isa = PBXBuildFile; fileRef = C6EBC1B42075F04C006ED713 /* HomeViewModelTest.m */; };
+		C6EBC1B72075F04C006ED713 /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = C6EBC1B52075F04C006ED713 /* data.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -166,7 +168,6 @@
 		C6314B47207574E1004DB62F /* Macros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Macros.h; sourceTree = "<group>"; };
 		C6314B482075799F004DB62F /* HomeModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeModel.h; sourceTree = "<group>"; };
 		C6314B492075799F004DB62F /* HomeModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeModel.m; sourceTree = "<group>"; };
-		C6314B4B2075BC09004DB62F /* MockDataHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MockDataHelper.m; sourceTree = "<group>"; };
 		C6314B4E2075C3AD004DB62F /* TestHomeViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestHomeViewModel.h; sourceTree = "<group>"; };
 		C6314B4F2075C3AD004DB62F /* TestHomeViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestHomeViewModel.m; sourceTree = "<group>"; };
 		C6725D7A20747A0700161B6D /* LunchTime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LunchTime.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -180,12 +181,15 @@
 		C6725D9220747A0700161B6D /* LunchTimeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LunchTimeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6725D9620747A0700161B6D /* LunchTimeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LunchTimeTests.m; sourceTree = "<group>"; };
 		C6725D9820747A0700161B6D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C6B7ABE12075D6C0009386AA /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C6BB9F2520749B6C0044FF17 /* CanadaModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CanadaModel.h; sourceTree = "<group>"; };
 		C6BB9F2620749B6C0044FF17 /* CanadaModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CanadaModel.m; sourceTree = "<group>"; };
 		C6BB9F2920749C970044FF17 /* PhotoModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PhotoModel.h; sourceTree = "<group>"; };
 		C6BB9F2A20749C970044FF17 /* PhotoModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhotoModel.m; sourceTree = "<group>"; };
 		C6BB9F2C20749CA00044FF17 /* CanadaViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CanadaViewModel.h; sourceTree = "<group>"; };
 		C6BB9F2D20749CA00044FF17 /* CanadaViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CanadaViewModel.m; sourceTree = "<group>"; };
+		C6EBC1B42075F04C006ED713 /* HomeViewModelTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewModelTest.m; sourceTree = "<group>"; };
+		C6EBC1B52075F04C006ED713 /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
 		E334594E636C630CB75EB0A0 /* Pods-LunchTimeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LunchTimeTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LunchTimeTests/Pods-LunchTimeTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -467,6 +471,7 @@
 				C6314B4D2075C387004DB62F /* RACUnitTest */,
 				C6314B462075748A004DB62F /* Vender */,
 				C6725D8620747A0700161B6D /* Assets.xcassets */,
+				C6B7ABE12075D6C0009386AA /* LaunchScreen.storyboard */,
 				C6725D8B20747A0700161B6D /* Info.plist */,
 				C6725D8C20747A0700161B6D /* main.m */,
 				C6314AC2207504EB004DB62F /* PrefixHeader.pch */,
@@ -478,7 +483,8 @@
 			isa = PBXGroup;
 			children = (
 				C6725D9620747A0700161B6D /* LunchTimeTests.m */,
-				C6314B4B2075BC09004DB62F /* MockDataHelper.m */,
+				C6EBC1B52075F04C006ED713 /* data.json */,
+				C6EBC1B42075F04C006ED713 /* HomeViewModelTest.m */,
 				C6725D9820747A0700161B6D /* Info.plist */,
 			);
 			path = LunchTimeTests;
@@ -587,6 +593,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C6B7ABE22075D6C0009386AA /* LaunchScreen.storyboard in Resources */,
 				C6314B3520757481004DB62F /* MJRefresh.bundle in Resources */,
 				C6725D8720747A0700161B6D /* Assets.xcassets in Resources */,
 			);
@@ -596,6 +603,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C6EBC1B72075F04C006ED713 /* data.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -760,7 +768,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C6725D9720747A0700161B6D /* LunchTimeTests.m in Sources */,
-				C6314B4C2075BC09004DB62F /* MockDataHelper.m in Sources */,
+				C6EBC1B62075F04C006ED713 /* HomeViewModelTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
